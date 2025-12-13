@@ -1,0 +1,67 @@
+body {
+    background-image: url('/images/PiGLy_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.auth-form__content {
+    margin: 130px 466px;
+    text-align: center;
+    width: 580px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.auth-form__title{
+    color: #EC87EF;
+    font-size: 35px;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 400;
+    gap: 10%;
+
+}
+
+.lora {
+        font-family: "Lora", serif;
+}
+
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    font-family: "Hiragino Mincho Pro", serif;
+    color: #333333;
+}
+
+h3 {
+    margin: 10px 0 30px 0;
+    font-size: 16px;
+    font-family: "Hiragino Mincho Pro", serif;
+    color: #333333;
+}
+
+form__button-submit {
+    text-decoration: none;
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background-image: linear-gradient(to right,#A3A6E1, #FFABD9);
+    color: #fff;
+    cursor: pointer;
+}
