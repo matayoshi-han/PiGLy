@@ -18,7 +18,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="text" name="name" value="{{ old('name') }}" />
+                    <input type="text" name="name" value="{{ old('name') }}" placeholder="名前を入力"/>
                 </div>
                 <div class="form__error">
                     @error('name')
@@ -33,7 +33,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="email" name="email" value="{{ old('email') }}" />
+                    <input type="email" name="email" value="{{ old('email') }}" placeholder="メールアドレスを入力"/>
                 </div>
                 <div class="form__error">
                     @error('email')
@@ -48,7 +48,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="password" name="password" />
+                    <input type="password" name="password" placeholder="パスワードを入力"/>
                 </div>
                 <div class="form__error">
                     @error('password')

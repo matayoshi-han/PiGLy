@@ -1,7 +1,5 @@
 .login-form__content {
     margin: 0 auto;
-    padding: 30px 15px;
-    max-width: 1230px;
 }
 
 .login-form__heading {
@@ -11,7 +9,7 @@
 
 .form {
     margin: 0 auto;
-    width: 25%;
+    width: 100%;
     text-align: center;
 }
 
@@ -44,12 +42,13 @@
 }
 
 .form__button-submit {
+    text-decoration: none;
     padding: 10px;
-    width: 30%;
+    width: 250px;
     height: 50px;
     border: none;
-    border-radius: 3px;
-    background: #000;
+    border-radius: 12px;
+    background-image: linear-gradient(to right, #A3A6E1, #FFABD9);
     color: #fff;
     cursor: pointer;
 }
