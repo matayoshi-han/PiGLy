@@ -41,4 +41,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function weightTarget()
+    {
+        return $this->hasOne(Weight_target::class);
+    }
+
+    public function weightLogs()
+    {
+        return $this->hasMany(Weight_log::class)->orderBy('date', 'desc');
+    }
 }

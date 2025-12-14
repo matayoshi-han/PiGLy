@@ -21,6 +21,7 @@ main {
     padding: 40px;
     background-color: #fff;
     border-radius: 24px;
+
 }
 
 .auth-form__title{
@@ -36,7 +37,7 @@ h1 {
 }
 
 .lora {
-        font-family: "Lora", serif;
+    font-family: "Lora", serif;
 }
 
 
