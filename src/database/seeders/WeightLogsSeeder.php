@@ -17,22 +17,21 @@ class WeightLogsSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create('ja_JP'); // 日本語ロケールでFakerを初期化
-        $userId = 5; // 紐づけるユーザーID。環境に合わせて変更してください。
+        $faker = Faker::create('ja_JP'); 
+        $userId = 1;
 
-        // 過去20日間のデータを生成する例
         for ($i = 0; $i < 20; $i++) {
             $date = Carbon::now()->subDays($i)->format('Y-m-d');
-            $weight = $faker->randomFloat(1, 50, 80); // 50.0kgから80.0kgの間でランダム
-            $calories = $faker->numberBetween(1200, 2500); // 1200calから2500calの間でランダム
+            $weight = $faker->randomFloat(1, 50, 80);
+            $calories = $faker->numberBetween(1200, 2500);
 
             DB::table('weight_logs')->insert([
                 'user_id' => $userId,
                 'date' => $date,
                 'weight' => $weight,
                 'calories' => $calories,
-                'exercise_time' => $faker->boolean(50) ? $faker->time('H:i') : null, // 50%の確率で時間を入力
-                'exercise_content' => $faker->boolean(70) ? $faker->sentence(3) : null, // 70%の確率で運動内容を入力
+                'exercise_time' => $faker->boolean(50) ? $faker->time('H:i') : null,
+                'exercise_content' => $faker->boolean(70) ? $faker->sentence(3) : null,
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
