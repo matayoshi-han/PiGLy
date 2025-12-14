@@ -18,7 +18,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="text" name="weight" value="{{ old('weight') }}" placeholder="現在の体重を入力" /><span>kg</span>
+                    <input type="text" name="weight" value="{{ old('weight') }}" placeholder="現在の体重を入力" /><span class="unit">kg</span>
                 </div>
                 <div class="form__error">
                     @error('weight')
@@ -33,7 +33,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="text" name="target_weight" value="{{ old('target_weight') }}" placeholder="目標の体重を入力" /><span>kg</span>
+                    <input type="text" name="target_weight" value="{{ old('target_weight') }}" placeholder="目標の体重を入力" /><span class="unit">kg</span>
                 </div>
                 <div class="form__error">
                     @error('target_weight')
