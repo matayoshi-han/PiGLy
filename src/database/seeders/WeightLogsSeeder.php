@@ -17,7 +17,7 @@ class WeightLogsSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create('ja_JP'); 
+        $faker = Faker::create('ja_JP');
         $userId = 1;
 
         for ($i = 0; $i < 20; $i++) {
